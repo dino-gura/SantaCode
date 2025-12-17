@@ -37,12 +37,12 @@ LANGUAGE_CONFIG = {
         'file_flag': ''
     },
     '.java': {
-        'image': 'openjdk:17-jdk-slim',
+        'image': 'eclipse-temurin:17-jdk',
         'command': 'sh -c "java -Djava.io.tmpdir=/tmp $0"', 
         'file_flag': ''
     },
     '.kt': {
-        'image': 'zenika/kotlin:1.8',
+        'image': 'cimg/kotlin:1.9.22',
         'command': 'sh -c "kotlinc $0 -include-runtime -d /tmp/output.jar && java -jar /tmp/output.jar"',
         'file_flag': ''
     },
